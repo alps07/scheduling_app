@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class='container' name="myForm" ng-controller='NewAppController'>
+		<h1>New Appointment</h1>
+		<form>
+			<label>Date:<input type="date" ng-model= "newAppn.date"></label>
+			<label>Time:<input type="time" ng-model = "newAppn.time"></label>
+			<label>Complain:<textarea ng-model="newAppn.complain"></textarea></label>
+			<a href="#/docApp" class='btn btn-primary' ng-click="addAppn(newAppn)">Add Appointment</a>
+
+
+		</form>
+	</div>
+</body>
+</html>
